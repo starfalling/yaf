@@ -595,7 +595,7 @@ static ZEND_HOT int yaf_dispatcher_handle(yaf_dispatcher_object *dispatcher) /* 
 					OBJ_RELEASE(Z_OBJ(controller));
 					return 1;
 				}
-                zval_dtor(&ret);
+                // zval_dtor(&ret);
 			} while(0);
 
 			/* controller's property yafAutoRender has higher priority */
